@@ -13,7 +13,7 @@ Covid-19, the most significant 'black swan incident' in 2020, seemed to unpreced
 
 1. [NASDAQ Healthcare](https://finance.yahoo.com/quote/^IXHC/history?p=^IXHC) and [NASDAQ Biotechnology](https://finance.yahoo.com/quote/^NBI/history?p=^NBI): these datasets records the historical data of NASDAQ indexes in these two covid-related sections. We will only use the 'close' data.
 2. [Covid-19 cases worldwide](https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data/resource/260bbbde-2316-40eb-aec3-7cd7bfc2f590): this dataset records the newly confirmed covid-19 cases in each country. We will calculate the worldwide data based on this dataset.
-3. [Google Trends on the topic 'Vaccine’](https://trends.google.com/trends/explore?q=%2Fm%2F07__7&geo=US): this dataset indicates the normalized number of worldwide queries under the topic 'Vaccine’.
+3. [Google Trends on the topic 'Vaccine'](https://trends.google.com/trends/explore?q=%2Fm%2F07__7&geo=US): this dataset indicates the normalized number of worldwide queries under the topic 'Vaccine'.
 4. [Government response index](#data): this dataset developed by the University of Oxford includes 4 indices to reflect different aspects of the level of government actions in over 180 countries. We will only use the overall government response index of the US.
 
 **Note that these datasets are all recorded on daily basis.**
@@ -22,15 +22,15 @@ Covid-19, the most significant 'black swan incident' in 2020, seemed to unpreced
 
 1. We will first conduct in-sample linear regression using the baseline AR-1 model  and the same model adding three predictors respectively. The AR-1 Model is expressed as: 
 
-![](http://latex.codecogs.com/svg.latex?\\y_t%20\sim%20y_{t-1}%20+%20y_{t-7}%20+%20cases_{t-1}%20+%20trends_{t-1}%20+%20response_{t-1})
+![1](http://latex.codecogs.com/svg.latex?\\y_t%20\sim%20y_{t-1}%20+%20y_{t-7}%20+%20cases_{t-1}%20+%20trends_{t-1}%20+%20response_{t-1})
 
-​		![](http://latex.codecogs.com/svg.latex?\\y_t): closing value of NASDAQ index (Healthcare/Biotechnology) on day ![](http://latex.codecogs.com/svg.latex?\\t).
+​		![2](http://latex.codecogs.com/svg.latex?\\y_t): closing value of NASDAQ index (Healthcare/Biotechnology) on day ![6](http://latex.codecogs.com/svg.latex?\\t).
 
-​		![](http://latex.codecogs.com/svg.latex?\\case_t): newly confirmed covid-19 cases worldwide on day ![](http://latex.codecogs.com/svg.latex?\\t).
+​		![3](http://latex.codecogs.com/svg.latex?\\case_t): newly confirmed covid-19 cases worldwide on day ![7](http://latex.codecogs.com/svg.latex?\\t).
 
-​		![](http://latex.codecogs.com/svg.latex?\\trends_t): worldwide Google Trends data on topic 'Vaccine' on day ![](http://latex.codecogs.com/svg.latex?\\t).
+​		![4](http://latex.codecogs.com/svg.latex?\\trends_t): worldwide Google Trends data on topic 'Vaccine' on day ![8](http://latex.codecogs.com/svg.latex?\\t).
 
-​		![](http://latex.codecogs.com/svg.latex?\\response_t): overall government response index of the US on day ![](http://latex.codecogs.com/svg.latex?\\t).
+​		![5](http://latex.codecogs.com/svg.latex?\\response_t): overall government response index of the US on day ![9](http://latex.codecogs.com/svg.latex?\\t).
 
 2. We will conduct a rolling-window prediction to fit out-sample regression based on the AR-1 models and evaluate the MAE especially during the days when many news for vaccine appear. 
 
