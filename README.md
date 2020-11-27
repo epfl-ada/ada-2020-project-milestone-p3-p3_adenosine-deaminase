@@ -26,7 +26,7 @@ People are extremely interested in talking about the trends of stocks because of
 
 **Data collection and wrangling** 
 
-Datasets that we needed have been delineated in the previous section.
+Datasets that we need have been delineated in the previous section.
 
 **Building the model**
 
