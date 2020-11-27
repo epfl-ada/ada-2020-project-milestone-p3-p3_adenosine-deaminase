@@ -22,7 +22,7 @@ Covid-19, the most significant 'black swan incident' in 2020, seemed to unpreced
 
 1. We will first conduct in-sample linear regression using the baseline AR-1 model  and the same model adding three predictors respectively. The AR-1 Model is expressed as: 
 
-![](http://latex.codecogs.com/svg.latex?\\y_t ~ y_{t-1} + y_{t-7} + cases_{t-1} + trends_{t-1} + response_{t-1})
+![](http://latex.codecogs.com/svg.latex?\\y_t%20\sim%20y_{t-1}%20+%20y_{t-7}%20+%20cases_{t-1}%20+%20trends_{t-1}%20+%20response_{t-1})
 
 ​		![](http://latex.codecogs.com/svg.latex?\\y_t): closing value of NASDAQ index (Healthcare/Biotechnology) on day ![](http://latex.codecogs.com/svg.latex?\\t).
 
