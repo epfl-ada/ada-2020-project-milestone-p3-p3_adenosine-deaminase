@@ -50,21 +50,15 @@ We will dive into various aspects of the COVID that may contribute to the NASDAQ
 ## Proposed timeline
 
 - **1 Dec**	 
-
 	- Download and wrangle datasets. 
-
 	- Build the first naive version of the AR-1 model and finish basic analysis.
-
 - **12 Dec**	
-
 	- Extract different features, try more complex models. 
 	- Prepare the data story.
-
 - **18 Dec**	
-- Conduct further analysis.
+	- Conduct further analysis.
 	- Finish the data story and start to make the video.
-	
 - **23 Dec**	
-- Finish video. 
+	- Finish video. 
 
  
