@@ -1,5 +1,7 @@
 # OK Google, google the NASDAQ
 
+Check [Data story](https://adenosine-deaminase.github.io/generic.html)
+
 ## Abstract
 
 COVID-19, the most significant "black swan incident" in 2020, seemed to add huge uncertainties to the stock market unprecedently. Here we propose to study whether we can predict the seemingly strongly COVID-related NASDAQ composite index, using several measurements of the Google Trends data. We will first use the baseline AR-1 model proposed in the paper to forecast the **closing prices** of the NASDAQ index. Then we will utilizing multiple Google Trends data to evaluate if the prediction could be improved. If so, we will further explore the sensitivity of the NASDAQ index to these predictors. This will help to understand to what extent the COVID-related news is influencing the stock market.
